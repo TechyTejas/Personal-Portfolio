@@ -114,7 +114,8 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 20px 16%; /* Adjust padding for smaller top and bottom spacing */
-    background-color: rgba(0, 0, 0, 0.8); /* Add a background color */
+    background: transparent;
+    /* background-color: rgba(0, 0, 0, 0.8); Add a background color */
     transition: all 0.5s ease;
 }
 
