@@ -17,10 +17,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Rubik&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
       <header>
-        <a href="#" class="logo">Developer<span>Tejas</span></a>
+        <a href="#" class="logo">Techy<span>Tejas</span></a>
 
         <div class="bx bx-menu" id="menu-icon"></div>
 
@@ -33,13 +34,13 @@
         </ul>
 
         <div class="top-btnn">
-            <a href="#" class="h-btn">Contact me</a>
+            <a href="#contact" class="h-btn">Contact me</a>
         </div>
     </header>
 
         <!-- hero -->
         <section class="hero" id="home">
-            <div class="main-content">
+            <div class="main-content" data-aos="fade-in">
                 <h4>Hii, There!</h4>
                 <h1>I'm <span>Tejas Sadade</span></h1>
                 <p>A passionate Web developer from India. I love to design and make websites</p>
@@ -61,11 +62,11 @@
 
         <!---About-->
         <section class="about" id="about">
-            <div class="about-img">
+            <div class="about-img" data-aos="zoom-in-down">
                 <img src="img/about.jpg" alt="about">
             </div>
             
-            <div class="about-text">
+            <div class="about-text" data-aos="zoom-in-up">
                 <h2>I am Product <span>Designer</span> <br> & Web Developer</h2>
                 <div class="exp-area">
                     <p class="exp">
@@ -101,14 +102,13 @@
                 <a href="#" class="btn">View All Projects</a>
             </div>
         </section>
-
         <!---Services-->
         <section class="services" id="services">
-            <div class="center-text">
+            <div class="center-text" data-aos="fade-down">
                 <h2>My <span>Services</span></h2>
             </div>
 
-            <div class="services-content">
+            <div class="services-content" data-aos="zoom-in-down">
                 <div class="box">
                     <img src="img/s-1.svg" alt="services">
                     <h3>UI/UX Design</h3>
@@ -145,11 +145,11 @@
 
         <!----Portifolio-->
         <section class="portfolio" id="portfolio">
-            <div class="center-text">
+            <div class="center-text" data-aos="fade-down">
                 <h2>My <span>Portfolio</span></h2>
             </div>
 
-            <div class="Portfolio-content">
+            <div class="Portfolio-content" data-aos="zoom-in-down">
                 <div class="row">
                     <img src="img/port-1.jpg" alt="img">
                     <div class="main-row">
@@ -238,19 +238,36 @@
 
         <!---contact-->
         <section class="contact" id="contact">
-            <div class="center-text">
+            <div class="center-text" data-aos="fade-down">
                 <h2>Contact <span>Me</span></h2>
             </div>
 
-            <div class="contact-form">
+            <div class="contact-form" data-aos="zoom-in">
                 <form action="">
                     <input type="text" placeholder="Your name" required>
                     <input type="email" placeholder="Email Address.." required>
                     <textarea name="" id="" cols="30" rows="10" placeholder="Write message here..." required></textarea>
-                    <input type="submit" name="" value="send message" class="send-btn"> 
+                    <input type="submit" name="" value="Send Message" class="send-btn"> 
                 </form>
             </div>
         </section>
+
+        <div class="footer">
+            <div class="copyright">
+                <p>2023 Tejas Sadade, All Rights Reserved.</p>
+            </div>
+
+            <a href="#home" class="scroll-top">
+                <i class="ri-arrow-up-s-fill"></i>
+            </a>
+        </div>
       <script src="js/script.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init({
+            offset:300,
+            duration:1400,
+        });
+      </script>
 </body>
 </html>
